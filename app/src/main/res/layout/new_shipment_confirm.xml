@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/layTable"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/lay_background"
+             android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:background="@drawable/table_row"
+        android:text="@string/label_new_shipment_info"
+        android:textSize="18sp"/>
+
+    <TableRow
+        android:background="@drawable/table_row">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_quantity_of_goods"/>
+
+        <EditText
+            android:id="@+id/edTxtNumberOfGoods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:lines="1"
+            android:inputType="numberDecimal"/>
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="3dp"
+        android:background="@drawable/button"
+        android:text="Confirm"
+        android:textColor="#ffffff"/>
+</TableLayout>

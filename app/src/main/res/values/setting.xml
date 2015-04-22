@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username"></string>
+    <string name="password"></string>
+    <string name="saveMe">0</string>
+    <string name="orderBy">id</string>
+    <string name="showBy">""</string>
+
+</resources>

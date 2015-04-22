@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/laySwipe"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layLinear">
+
+        <ListView
+            android:id="@+id/lstOrdersList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#fff"/>
+
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

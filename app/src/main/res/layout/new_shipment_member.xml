@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/lay_background"
+                android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edTxtUsername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/label_username"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edTxtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:lines="1"/>
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTxtUsername"
+        android:layout_alignBaseline="@+id/edTxtPhone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/label_phone"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edTxtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTxtUsername"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_toEndOf="@id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="phone"
+        android:lines="1"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTxtPhone"
+        android:text="* Enter Username and Phone of the Receiver"
+        android:textColor="@color/primary_dark_material_light"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/layLinearUserResult"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFindUser"
+        android:layout_below="@+id/label"/>
+
+    <Button
+        android:id="@+id/btnFindUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_margin="3dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:text="@string/btn_find_user"
+        android:textColor="#ffffff"/>
+</RelativeLayout>

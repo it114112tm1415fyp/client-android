@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/lay_background"
+            android:padding="5dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/label_id"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewUserId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/label_username"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/label_real_name"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewRealName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/label_phone"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/label_email"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <LinearLayout
+            android:background="@drawable/table_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/label_address"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:id="@+id/layLinearAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+        </LinearLayout>
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/label_register_time"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewRegisterTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/label_last_modify_time"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewLastModifyTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/btnEditUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button"
+            android:text="@string/btn_edit_user"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button"
+            android:text="@string/btn_logout"
+            android:textColor="#ffffff"/>
+    </TableLayout>
+
+</ScrollView>

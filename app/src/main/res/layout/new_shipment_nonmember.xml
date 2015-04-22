@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/lay_background"
+                android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/edTxtRealName"
+        android:text="@string/label_receiver_real_name"
+        android:id="@+id/textView2"/>
+
+    <EditText
+        android:id="@+id/edTxtRealName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/edTxtPhone"
+        android:text="@string/label_receiver_phone"/>
+
+    <EditText
+        android:id="@+id/edTxtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTxtRealName"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/edTxtEmail"
+        android:text="@string/label_receiver_email"/>
+
+    <EditText
+        android:id="@+id/edTxtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edTxtPhone"
+        android:layout_alignStart="@+id/edTxtPhone"
+        android:layout_below="@+id/edTxtPhone"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnAddress"
+        android:text="@string/label_receiver_address"/>
+
+    <Button
+        android:id="@+id/btnAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/edTxtEmail"
+        android:layout_marginBottom="3dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:background="@drawable/button"
+        android:text="@string/btn_choose_shop"
+        android:textColor="#ffffff"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAddress"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/layRelativeReceiverAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/btnClear"
+                android:layout_toStartOf="@+id/btnClear">
+
+                <EditText
+                    android:id="@+id/edTxtSubAddress1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:hint="@string/hit_address1"/>
+
+                <EditText
+                    android:id="@+id/edTxtSubAddress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:hint="@string/hit_address2"/>
+
+                <EditText
+                    android:id="@+id/edTxtSubAddress3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:hint="@string/hit_address3"/>
+
+                <Spinner
+                    android:id="@+id/spnnrRegion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button"
+                android:text="@string/btn_clear"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_margin="3dp"
+                android:background="@drawable/button"
+                android:text="@string/btn_next"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lstShopAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layLinear"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

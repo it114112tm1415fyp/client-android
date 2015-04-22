@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="it114112tm1415fyp.com.client_android">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/black_head_profiles"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Holo.Light">
+        <activity
+            android:name=".Home_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register_Activity"
+            android:label="@string/header_register"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Login_Activity"
+            android:label="@string/header_login"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UserProfile_Activity"
+            android:label="@string/header_user_profile"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".EditProfile_Activity"
+            android:label="@string/header_edit_profile"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NewShipment_Activity"
+            android:label="@string/header_new_shipment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NewShipmentNonMember_Activity"
+            android:label="@string/header_new_shipment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NewShipmentMember_Activity"
+            android:label="@string/header_new_shipment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ShipmentDestinationList_Activity"
+            android:label="@string/header_choose_destination"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ShipmentDepartureList_Activity"
+            android:label="@string/header_choose_departure"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ShipmentChooseReceiveTime_Activity"
+            android:label="@string/header_choose_receive_time"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NewShipmentConfirm_Activity"
+            android:label="@string/header_new_shipment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ShipmentsList_Activity"
+            android:label="@string/header_my_shipments"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ShipmentInfo_Activity"
+            android:label="@string/header_shipment_info"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".EditShipment_Activity"
+            android:label="@string/header_edit_shipment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".GoodsInfo_Activity"
+            android:label="@string/header_goods_info"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CustomerService"
+            android:label="@string/header_customer_service"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

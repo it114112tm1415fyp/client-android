@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_margin="3dp"
+              android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/app_name"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <LinearLayout
+            android:id="@+id/layLinearNewShipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_box"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgViewNewShipment"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="@drawable/new_shipment"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/big_label_background"
+                android:text="@string/label_new_shipment"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layLinearOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_box"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgViewOther"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="@drawable/information"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/big_label_background"
+                android:text="Other"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <LinearLayout
+            android:id="@+id/layLinearMyShipments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_box"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgViewMyShipments"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="@drawable/purchase_order"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/big_label_background"
+                android:text="@string/label_my_shipments"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layLinearUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_box"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgViewUserProfile"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="@drawable/member"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/big_label_background"
+                android:text="@string/label_user_profile"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

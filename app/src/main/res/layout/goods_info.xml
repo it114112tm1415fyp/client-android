@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                              android:id="@+id/laySwipe"
+                                              android:layout_height="match_parent"
+                                              android:layout_width="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lay_background"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_id"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewGoodsId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_weight"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_fragile"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewFragile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_flammable"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewFlammable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_location"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/table_row"
+            android:layout_margin="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_update_time"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtViewLastUpdateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <ListView
+            android:id="@+id/lstGoodsLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"/>
+    </TableLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
